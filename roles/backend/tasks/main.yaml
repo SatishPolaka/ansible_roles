@@ -37,7 +37,7 @@
     path: /app
 
 - name: copy backend service file from anisble server to remote backend server
-  ansible.builtin.copy:
+  ansible.builtin.template:
     src: backend.service
     dest: /etc/systemd/system/backend.service
 
