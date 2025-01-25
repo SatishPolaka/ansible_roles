@@ -2,8 +2,12 @@
   ansible.builtin.dnf:
     name: nginx
     state: installed
-  notify:
-  - start and enable the nginx service
+
+- name: start and enable the nginx service
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: yes
 
 
 - name: delete the directory
