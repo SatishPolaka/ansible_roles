@@ -38,7 +38,7 @@
 
 - name: copy backend service file from anisble server to remote backend server
   ansible.builtin.template:
-    src: backend.service
+    src: backend.service.j2
     dest: /etc/systemd/system/backend.service
 
 - name: install backend library
