@@ -3,7 +3,7 @@
     name: nginx
     state: installed
   notify:
-    - start and enable the nginx service
+  - start and enable the nginx service
 
 
 - name: delete the directory
